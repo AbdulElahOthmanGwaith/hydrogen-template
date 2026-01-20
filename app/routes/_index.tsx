@@ -59,8 +59,59 @@ export default function Homepage() {
   const data = useLoaderData<typeof loader>();
   return (
     <div className="home">
+      <HeroSection />
       <FeaturedCollection collection={data.featuredCollection} />
       <RecommendedProducts products={data.recommendedProducts} />
+    </div>
+  );
+}
+
+function HeroSection() {
+  return (
+    <div className="hero-section" style={{
+      position: 'relative',
+      height: '60vh',
+      minHeight: '400px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      overflow: 'hidden',
+      marginBottom: '4rem',
+      borderRadius: 'var(--border-radius)',
+      margin: '1rem 2rem 4rem 2rem'
+    }}>
+      <img 
+        src="/app/assets/hero-banner.jpg" 
+        alt="Future Tech Store" 
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          zIndex: -1
+        }}
+      />
+      <div className="hero-content" style={{
+        textAlign: 'center',
+        color: 'white',
+        background: 'rgba(0, 0, 0, 0.3)',
+        padding: '2rem 4rem',
+        borderRadius: 'var(--border-radius)',
+        backdropFilter: 'blur(8px)'
+      }}>
+        <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem', fontWeight: '800' }}>مستقبل التسوق هنا</h1>
+        <p style={{ fontSize: '1.25rem', marginBottom: '2rem' }}>اكتشف أحدث التقنيات والأجهزة الذكية لعام 2026</p>
+        <Link to="/collections/all" className="header-menu-item" style={{ 
+          background: 'var(--color-accent)', 
+          color: 'white', 
+          padding: '1rem 2.5rem',
+          fontSize: '1.1rem'
+        }}>
+          تسوق الآن
+        </Link>
+      </div>
     </div>
   );
 }
