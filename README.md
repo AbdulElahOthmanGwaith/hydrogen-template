@@ -1,4 +1,25 @@
-# 🚀 Hydrogen Template: Skeleton (Enhanced)
+---
+language:
+- ar
+- en
+tags:
+- shopify
+- hydrogen
+- remix
+- e-commerce
+- template
+- vite
+- typescript
+license: mit
+datasets: []
+metrics: []
+library_name: remix
+pipeline_tag: text-generation
+---
+
+# 🚀 Hydrogen Template: Skeleton (Enhanced) 2026
+
+**The ultimate Shopify Hydrogen & Remix starter kit for high-performance, SEO-optimized headless commerce.**
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AbdulElahOthmanGwaith/hydrogen-template)
 
@@ -7,6 +28,9 @@
 ---
 
 ## 🌟 الميزات الرئيسية | Key Features
+
+- **SEO Optimized**: Built-in meta tags, structured data, and fast loading times for Google ranking.
+- **Modern Tech Stack**: React, Remix, Vite, and Tailwind CSS.
 
 - **Remix 2.x**: إطار عمل كامل للمواقع السريعة والمتجاوبة.
 - **Hydrogen**: مكتبة Shopify المخصصة للتجارة الإلكترونية "Headless".
